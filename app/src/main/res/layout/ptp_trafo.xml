@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list1"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".PtptrafoActivity"
+    >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="487dp"
+        android:orientation="vertical"
+        android:layout_weight="0.80">
+
+        <RadioGroup
+            android:id="@+id/opciones_ptptrafo"
+            android:layout_width="match_parent"
+            android:layout_height="538dp"
+            android:layout_below="@+id/textView"
+            android:orientation="vertical"
+            android:gravity="left"
+            android:layout_margin="25dp"
+            android:background="#b1faad"
+            android:paddingRight="50dp">
+
+            <RadioButton
+                android:id="@+id/ptp401"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:checked="false"
+                android:text="Bujes rotos para ser sustituídos"
+                android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton
+                android:id="@+id/ptp402"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Bujes contaminados ó con descargas superficiales"
+                android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton
+                android:id="@+id/ptp403"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Codos con anomalías"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/ptp404"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Pérdida de aceite"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/ptp405"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Nivel de aceite insuficiente"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/ptp406"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Falta unión a tierra de la carcasa"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/ptp411"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Normalización transformadores 7.6 kV"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+            android:id="@+id/ptp407"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Ruido anómalo"
+            android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/ptp408"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Fijación inadecuada a las vigas"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+            android:id="@+id/ptp409"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Presencia de nidos"
+            android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/ptp410"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Criticidad desde la inspección termográfica"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+    </ScrollView>
+
+</LinearLayout>

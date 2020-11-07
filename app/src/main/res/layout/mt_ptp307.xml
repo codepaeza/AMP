@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list1"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Ptp307Activity"
+    >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="487dp"
+        android:orientation="vertical"
+        android:layout_weight="0.80">
+
+        <RadioGroup
+            android:id="@+id/opciones_ptp307"
+            android:layout_width="match_parent"
+            android:layout_height="538dp"
+            android:layout_below="@+id/textView"
+            android:orientation="vertical"
+            android:gravity="left"
+            android:layout_margin="25dp"
+            android:background="#b1faad"
+            android:paddingRight="50dp">
+
+            <RadioButton
+                android:id="@+id/ptp43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:checked="false"
+                android:text="Se identifica violación de las distancias de seguridad  entre fases menor a 56 cm para 34,5 kV y de 33 cm para 13,2 kV/11,4 kV "
+                android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton
+                android:id="@+id/ptp44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:checked="false"
+                android:text="Se identifican violación de las distancias de seguridad con elementos con referencia a tierra, en particular a postes, estructuras y elementos metálicos del transformador con distancia menor a 41 cm para 34.5 kV y de 30
+cm para 13.2 kV/11.4 kV"
+                android:onClick="onRadioButtonClicked"/>
+
+        </RadioGroup>
+    </ScrollView>
+
+</LinearLayout>

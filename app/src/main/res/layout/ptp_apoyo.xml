@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list1"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".PtpapoyoActivity"
+    >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="487dp"
+        android:orientation="vertical"
+        android:layout_weight="0.80">
+
+        <RadioGroup
+            android:id="@+id/opciones_ptpapoyo"
+            android:layout_width="match_parent"
+            android:layout_height="538dp"
+            android:layout_below="@+id/textView"
+            android:orientation="vertical"
+            android:gravity="left"
+            android:layout_margin="25dp"
+            android:background="#b1faad"
+            android:paddingRight="50dp">
+
+            <RadioButton
+                android:id="@+id/ptp201"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:checked="false"
+                android:text="Apoyo de concreto roto"
+                android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton
+                android:id="@+id/ptp202"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Apoyo metálico deteriorado"
+                android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton
+                android:id="@+id/ptp206"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Apoyo desaplomado"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/ptp207"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Estructura con riesgo de volcamiento"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/ptp208"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Vegetación trepadora para talar"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/ptp209"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Plantas altas para podar ó talar"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/ptp211"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Cruceta de madera para soporte de red ó protecciones rota"
+            android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/ptp212"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Cruceta metálica para soporte de red ó protecciones doblada u oxidada"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/ptp213"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Criticidad por inspección termográfica"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/ptp214"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Apoyo de madera deteriorado"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+    </ScrollView>
+
+</LinearLayout>

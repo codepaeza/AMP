@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list1"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".FallaraaislemtActivity"
+    >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="487dp"
+        android:orientation="vertical"
+        android:layout_weight="0.80">
+
+        <RadioGroup
+            android:id="@+id/opciones_ramo511mt"
+            android:layout_width="match_parent"
+            android:layout_height="538dp"
+            android:layout_below="@+id/textView"
+            android:orientation="vertical"
+            android:gravity="left"
+            android:layout_margin="25dp"
+            android:background="#b1faad"
+            android:paddingRight="50dp"
+            android:weightSum="1">
+
+            <RadioButton
+                android:id="@+id/ramo511_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:checked="false"
+                android:text="Ausencia de DPS en equipos seccionadores aéreos de poste en SF6"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/ramo511_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:checked="false"
+                android:text="El DPS presenta señales de descargas, desconexión forzada, ruptura, deformación del cuerno, vencimiento de pastillas"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/ramo511_03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:checked="false"
+                android:text="Cuerno, punta del chispero, ó DPS está inclinado 30° desde el eje vertical"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/ramo511_04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:checked="false"
+                android:text="Ausencia de pararrayos en la transición de cables subterráneos a cables aéreos y cercanos a transformadores"
+                android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton
+                android:id="@+id/ramo511_05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:checked="false"
+                android:text="Fallas en las conexiones entre los elementos ó se utilizan conectores no adecuados ó conductor no adecuado"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+    </ScrollView>
+
+
+</LinearLayout>

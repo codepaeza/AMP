@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list1"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Ptp209Activity"
+    >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="487dp"
+        android:orientation="vertical"
+        android:layout_weight="0.80">
+
+        <RadioGroup
+            android:id="@+id/opciones_ptp209"
+            android:layout_width="match_parent"
+            android:layout_height="538dp"
+            android:layout_below="@+id/textView"
+            android:orientation="vertical"
+            android:gravity="left"
+            android:layout_margin="25dp"
+            android:background="#b1faad"
+            android:paddingRight="50dp">
+
+            <RadioButton
+                android:id="@+id/ptp25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:checked="false"
+                android:text="El árbol está en contacto, entrecruza o supera los bornes de BT o los bujes en MT"
+                android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton
+                android:id="@+id/ptp26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:checked="false"
+                android:text="La distancia de contacto entre el árbol y cualquier parte activa del elemento PTP se encuentra entre 0.01 y 2 metros previo al contacto"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/ptp27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:checked="false"
+                android:text="La distancia de contacto entre el árbol y cualquier parte activa del elemento PTP Se encuentra entre 2 y 3 metros previo al contacto"
+                android:onClick="onRadioButtonClicked"/>
+
+        </RadioGroup>
+    </ScrollView>
+
+</LinearLayout>

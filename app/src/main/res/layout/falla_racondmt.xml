@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list1"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".FallaracondmtActivity"
+    app:layout_collapseParallaxMultiplier="1.0">
+
+    <ScrollView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+  <RadioGroup
+      android:id="@+id/opciones_categptp"
+      android:layout_width="wrap_content"
+      android:layout_height="538dp"
+      android:layout_below="@+id/textView"
+      android:orientation="vertical"
+      android:gravity="left"
+      android:layout_margin="25dp"
+      android:background="#b1faad"
+      android:paddingRight="50dp"
+      android:weightSum="1">
+
+      <RadioButton
+          android:id="@+id/ramo201"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="16dp"
+          android:checked="false"
+          android:text="Distancia vertical:vías ó viviendas"
+          android:onClick="onRadioButtonClicked"/>
+
+      <RadioButton
+          android:id="@+id/ramo217"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:checked="false"
+          android:text="Distancia vertical:entre circuitos"
+          android:onClick="onRadioButtonClicked"/>
+
+      <RadioButton
+          android:id="@+id/ramo202"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:checked="false"
+          android:text="Vano con hilos rotos en conductor"
+          android:onClick="onRadioButtonClicked"/>
+
+      <RadioButton
+          android:id="@+id/ramo203"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:checked="false"
+          android:text="Pases, alambres, puente flojo ó degradado"
+          android:onClick="onRadioButtonClicked"/>
+
+      <RadioButton
+          android:id="@+id/ramo204"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:checked="false"
+          android:text="Amarres sueltos o rotos"
+          android:onClick="onRadioButtonClicked"/>
+
+      <RadioButton
+          android:id="@+id/ramo205"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:checked="false"
+          android:text="Vano distensionado"
+          android:onClick="onRadioButtonClicked"/>
+
+      <RadioButton
+          android:id="@+id/ramo206"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:checked="false"
+          android:text="Árboles altos para podar"
+          android:onClick="onRadioButtonClicked"/>
+
+      <RadioButton
+          android:id="@+id/ramo207"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:checked="false"
+          android:text="Árboles para cortar ó talar"
+          android:onClick="onRadioButtonClicked"/>
+
+      <RadioButton
+          android:id="@+id/ramo208"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:checked="false"
+          android:text="Cuerpos extraños colgando"
+          android:onClick="onRadioButtonClicked"/>
+
+      <RadioButton
+          android:id="@+id/ramo209"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:checked="false"
+          android:text="Corrimiento ó debilitamiento en grapas"
+          android:onClick="onRadioButtonClicked"
+          android:layout_weight="0.25" />
+
+      <RadioButton
+          android:id="@+id/ramo210"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:checked="false"
+          android:text="Conectores/Terminales recalentados"
+          android:onClick="onRadioButtonClicked"
+          android:layout_weight="0.33" />
+
+      <RadioButton
+          android:id="@+id/ramo211"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:checked="false"
+          android:text="Ánomalía por efecto de descargas atmosféricas"
+          android:onClick="onRadioButtonClicked"/>
+
+      <RadioButton
+          android:id="@+id/ramo212"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:checked="false"
+          android:text="Otras anomalías (empalmes, grapas, conectores, etc)"
+          android:onClick="onRadioButtonClicked"/>
+
+      <RadioButton
+          android:id="@+id/ramo213"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:checked="false"
+          android:text="Presencia de obras cercanas a redes"
+          android:onClick="onRadioButtonClicked" />
+
+      <RadioButton
+          android:id="@+id/ramo214"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:checked="false"
+          android:text="Cable aéreo con múltiples empalmes"
+          android:onClick="onRadioButtonClicked"
+          android:layout_weight="1" />
+
+  </RadioGroup>
+  </ScrollView>
+
+
+</LinearLayout>

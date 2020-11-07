@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list1"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".TipoActivity"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Pocket AMP MT (Colombia)"
+        android:layout_weight="1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+
+        />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/codensa_logo"
+        android:src="@mipmap/codensa_logo"/>
+
+    <RadioGroup
+        android:id="@+id/opciones_clase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:layout_below="@+id/textView"
+        android:orientation="vertical"
+        android:gravity="left"
+        android:layout_margin="25dp"
+        android:background="#42e43a"
+        android:paddingRight="50dp">
+
+        <RadioButton
+            android:id="@+id/ramo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:checked="false"
+            android:text="Ramo (Red Aérea MT)"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/ptp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Centro Transformación Poste"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/cabina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Cabina (Red Subterránea MT)"
+            android:onClick="onRadioButtonClicked"/>
+
+    </RadioGroup>
+
+</LinearLayout>
